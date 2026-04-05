@@ -19,26 +19,21 @@
 
 // -----------------
 
-&sk {
-    // don't release mods on other mods presses
-
-    ignore-modifiers;
-};
-
 / {
     behaviors {
         // Enables holding the first mod-tap key
         // by performing a tap-release-hold sequence.
         // To use it: "&qt KEYCODE1 KEYCODE2"
 
-        qt: quick_tap {
+        hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
-            label = "QUICK_TAP";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            label = "HRM";
             bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <10 11 12 13 19 18 16 17 30 31 32 33>;
         };
     };
 
@@ -183,10 +178,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp Q           &kp W       &kp F        &kp P             &kp B        &kp J         &kp L              &kp U        &kp Y            &kp SEMICOLON
-&mt LEFT_GUI A  &mt LALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G        &kp M         &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RGUI O
-&kp Z           &kp X       &kp C        &kp D             &kp V        &kp K         &kp H              &kp COMMA    &kp DOT          &kp SLASH
-                                         &lt 3 BACKSPACE   &lt 1 ENTER  &lt 2 DELETE  &lt 4 SPACE
+&kp Q            &kp W        &kp F         &kp P              &kp B        &kp J         &kp L               &kp U         &kp Y             &kp SEMICOLON
+&hrm LEFT_GUI A  &hrm LALT R  &hrm LCTRL S  &hrm LEFT_SHIFT T  &kp G        &kp M         &hrm RIGHT_SHIFT N  &hrm RCTRL E  &hrm RIGHT_ALT I  &hrm RGUI O
+&kp Z            &kp X        &kp C         &kp D              &kp V        &kp K         &kp H               &kp COMMA     &kp DOT           &kp SLASH
+                                            &lt 3 BACKSPACE    &lt 1 ENTER  &lt 2 DELETE  &lt 4 SPACE
             >;
         };
 
