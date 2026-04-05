@@ -140,6 +140,42 @@
             key-positions = <24 14>;
             layers = <0>;
         };
+
+        combo_caps {
+            bindings = <&kp CAPS>;
+            key-positions = <5 6>;
+            layers = <0>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        combo_quest {
+            bindings = <&kp QUESTION>;
+            key-positions = <29 28>;
+            layers = <0>;
+        };
+
+        combo_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <28 27>;
+            layers = <0>;
+        };
+
+        combo_squt {
+            bindings = <&kp SQT>;
+            key-positions = <27 26>;
+            layers = <0>;
+        };
+
+        combo_dqut {
+            bindings = <&kp DQT>;
+            key-positions = <28 26>;
+            layers = <0>;
+        };
     };
 
     keymap {
