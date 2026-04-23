@@ -214,10 +214,10 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp KP_EQUAL     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS      &none         &kp F1        &kp F2   &kp F3   &kp F4
-&kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &bt BT_CLR    &kp F5        &kp F6   &kp F7   &kp F8
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTRK     &bt BT_SEL 2  &kp F9        &kp F10  &kp F11  &kp F12
-                                                   &trans           &none         &bt BT_SEL 0  &bt BT_SEL 1
+&kp KP_EQUAL  &kp N7        &kp N8        &kp N9        &kp PLUS      &none         &kp F1        &kp F2   &kp F3   &kp F4
+&kp KP_DOT    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS  &bt BT_CLR    &kp F5        &kp F6   &kp F7   &kp F8
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK     &bt BT_SEL 2  &kp F9        &kp F10  &kp F11  &kp F12
+                                          &trans        &none         &bt BT_SEL 0  &bt BT_SEL 1
             >;
         };
 
