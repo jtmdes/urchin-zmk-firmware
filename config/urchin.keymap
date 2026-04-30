@@ -185,6 +185,12 @@
             key-positions = <28 26>;
             layers = <0>;
         };
+
+        combo_mousetg {
+            bindings = <&tog 2>;
+            key-positions = <24 20>;
+            layers = <0>;
+        };
     };
 
     keymap {
