@@ -189,7 +189,7 @@
         combo_mousetg {
             bindings = <&tog 2>;
             key-positions = <24 20>;
-            layers = <0>;
+            layers = <0 2>;
         };
     };
 
