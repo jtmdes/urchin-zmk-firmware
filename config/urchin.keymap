@@ -31,11 +31,11 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <278>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
             hold-trigger-key-positions = <19 18 16 17 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <75>;
             hold-trigger-on-release;
         };
 
@@ -45,10 +45,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <74>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <10 11 12 13 0 4 10 11 12 13 14 20 21 22 23 24 30 31 1 2 3>;
         };
