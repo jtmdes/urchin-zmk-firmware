@@ -213,7 +213,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none            &kp K_MENU       &kp INS      &none       &none   &none               &none           &none           &none      &none
+&none            &kp K_MENU       &kp INS      &none       &none   &bt BT_CLR          &none           &none           &none      &none
 &kp F5           &kp F2           &kp LCTRL    &kp LSHIFT  &none   &none               &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT  &kp PAGE_UP
 &kp PRINTSCREEN  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(E)   &none   &none               &kp HOME        &kp DOWN_ARROW  &kp END    &kp PAGE_DOWN
                                                &none       &trans  &kp LC(LEFT_ARROW)  &kp LC(RIGHT)
@@ -225,10 +225,10 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&none      &msc SCRL_LEFT  &kp ESCAPE      &msc SCRL_RIGHT  &none      &tog 2  &none       &none      &none  &none
-&mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none      &none   &kp RSHIFT  &kp RCTRL  &none  &none
-&none      &msc SCRL_UP    &mmv MOVE_DOWN  &msc SCRL_DOWN   &none      &none   &none       &none      &none  &none
-                                           &mkp MCLK        &mkp LCLK  &trans  &none
+&none      &msc SCRL_LEFT  &kp ESCAPE      &msc SCRL_RIGHT  &none      &bt BT_SEL 2  &kp F1  &kp F2   &kp F3   &kp F4
+&mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none      &bt BT_SEL 1  &kp F5  &kp F6   &kp F7   &kp F8
+&none      &msc SCRL_UP    &mmv MOVE_DOWN  &msc SCRL_DOWN   &none      &bt BT_SEL 0  &kp F9  &kp F10  &kp F11  &kp F12
+                                           &mkp MCLK        &mkp LCLK  &trans        &none
             >;
         };
 
@@ -237,10 +237,10 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp EQUAL     &kp N7        &kp N8        &kp N9        &kp PLUS   &none         &kp F1        &kp F2   &kp F3   &kp F4
-&kp DOT       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &bt BT_CLR    &kp F5        &kp F6   &kp F7   &kp F8
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK  &bt BT_SEL 2  &kp F9        &kp F10  &kp F11  &kp F12
-                                          &trans        &none      &bt BT_SEL 0  &bt BT_SEL 1
+&kp EQUAL     &kp N7        &kp N8        &kp N9        &kp PLUS   &kp J            &kp L              &kp U      &kp Y       &kp SEMICOLON
+&kp DOT       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &kp M            &kp N              &kp E      &kp I       &kp O
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK  &kp K            &kp H              &kp COMMA  &kp PERIOD  &kp SLASH
+                                          &trans        &none      &kp RIGHT_SHIFT  &kp RIGHT_CONTROL
             >;
         };
 
@@ -249,10 +249,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&none      &none             &none           &none                 &none  &none  &none                  &none            &none              &none
-&kp TILDE  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &none  &none  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PIPE
-&kp GRAVE  &none             &kp AMPS        &kp HASH              &none  &none  &kp PERCENT            &kp DOLLAR       &kp CARET          &kp BACKSLASH
-                                             &none                 &none  &none  &trans
+&kp Q  &kp W  &kp F  &kp P             &kp B           &kp HASH   &kp DOLLAR             &kp PERCENT      &kp CARET          &kp AMPS
+&kp A  &kp R  &kp S  &kp T             &kp G           &kp TILDE  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp PIPE
+&kp Z  &kp X  &kp C  &kp D             &kp V           &kp GRAVE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH
+                     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none      &none
             >;
         };
     };
