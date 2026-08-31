@@ -237,10 +237,10 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp EQUAL     &kp N7        &kp N8        &kp N9        &kp PLUS   &kp J            &kp L              &kp U      &kp Y       &kp SEMICOLON
-&kp DOT       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &kp M            &kp N              &kp E      &kp I       &kp O
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK  &kp K            &kp H              &kp COMMA  &kp PERIOD  &kp SLASH
-                                          &trans        &none      &kp RIGHT_SHIFT  &kp RIGHT_CONTROL
+&kp EQUAL       &kp N7        &kp N8        &kp N9        &kp PLUS   &kp J  &kp L   &kp U      &kp Y       &kp SEMICOLON
+&kp LEFT_SHIFT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOT    &kp M  &kp N   &kp E      &kp I       &kp O
+&kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &kp K  &kp H   &kp COMMA  &kp PERIOD  &kp SLASH
+                                            &trans        &none      &none  &trans
             >;
         };
 
@@ -249,10 +249,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&kp Q  &kp W  &kp F  &kp P             &kp B           &kp HASH   &kp DOLLAR             &kp PERCENT      &kp CARET          &kp AMPS
-&kp A  &kp R  &kp S  &kp T             &kp G           &kp TILDE  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp PIPE
-&kp Z  &kp X  &kp C  &kp D             &kp V           &kp GRAVE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH
-                     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none      &none
+&kp Q  &kp W  &kp F  &kp P   &kp B  &kp HASH       &kp DOLLAR             &kp PERCENT      &kp CARET          &kp AMPS
+&kp A  &kp R  &kp S  &kp T   &kp G  &kp BACKSLASH  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp RIGHT_SHIFT
+&kp Z  &kp X  &kp C  &kp D   &kp V  &kp GRAVE      &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_CONTROL
+                     &trans  &none  &none          &trans
             >;
         };
     };
