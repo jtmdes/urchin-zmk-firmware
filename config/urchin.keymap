@@ -191,6 +191,11 @@
             key-positions = <24 20>;
             layers = <0 2>;
         };
+
+        Prtscn {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <0 3>;
+        };
     };
 
     keymap {
@@ -201,10 +206,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp Q             &kp W         &kp F          &kp P               &kp B      &kp J            &kp L                &kp U          &kp Y              &kp SEMICOLON
-&hrmr LEFT_GUI A  &hrmr LALT R  &hrmr LCTRL S  &hrmr LEFT_SHIFT T  &kp G      &kp M            &hrml RIGHT_SHIFT N  &hrml RCTRL E  &hrml RIGHT_ALT I  &hrml RGUI O
-&lt 1 Z           &kp X         &kp C          &kp D               &kp V      &kp K            &kp H                &kp COMMA      &kp DOT            &lt 2 SLASH
-                                               &lt 3 BACKSPACE     &kp ENTER  &kp RIGHT_SHIFT  &kp SPACE
+&lt 1 Q           &kp W         &kp F          &kp P               &kp B        &kp J            &kp L                &kp U          &kp Y              &lt 2 SEMICOLON
+&hrmr LEFT_GUI A  &hrmr LALT R  &hrmr LCTRL S  &hrmr LEFT_SHIFT T  &kp G        &kp M            &hrml RIGHT_SHIFT N  &hrml RCTRL E  &hrml RIGHT_ALT I  &hrml RGUI O
+&kp Z             &kp X         &kp C          &kp D               &kp V        &kp K            &kp H                &kp COMMA      &kp DOT            &kp SLASH
+                                               &kp BACKSPACE       &lt 3 ENTER  &kp RIGHT_SHIFT  &kp SPACE
             >;
         };
 
